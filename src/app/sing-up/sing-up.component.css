@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&display=swap');
+
+* {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+  appearance: none;
+  width: 30px;  
+  height: 30px;
+  border-radius: 5px; 
+  outline: none; 
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 10px; 
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  margin-left: 45px;
+  display: inline-block; 
+  line-height: 30px;
+  background-color: #9ce0ff; 
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓"; 
+  color: black; 
+  font-size: 30px; 
+  padding-bottom: 5px;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.hero {
+  width: 500px;
+}
+
+.head {
+  background-color: #9ce0ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log_in {
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 500px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+
+#username {
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 23px;
+  background-color: #9ce0ff;
+  margin-top: 40px;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-top: 15px;
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#password {
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 23px;
+  background-color: #9ce0ff;
+  margin-top: 25px;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-top: 15px;
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+#log_in_button {
+  background-color: #9ce0ff;
+  font-size: 23px;
+  margin-top: 50px;
+  margin-left: 85px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#titulo {
+  font-size: 23px;
+  color: #000000;
+  margin-top: -3px;
+  margin-bottom: -3px;
+  margin-left: 10px;
+}
+
+#salir {
+  font-size: 23px;
+  color: #000000;
+  margin-top: -3px;
+  margin-bottom: -3px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#terminos {
+  display:inline;
+  color: #9ce0ff;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-bottom: -10px;
+  
+}
+
+#box {
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}

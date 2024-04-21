@@ -1,1 +1,30 @@
-<p>login works!</p>
+<section class="hero">
+  <div class="head">
+    <h1 id="titulo">JUST TIPE IT</h1>
+    <a href="#" id="salir">X</a>
+  </div>
+  <div class="log_in">
+    <form action="#">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="USUARIO"
+        [(ngModel)]="username"
+      />
+      <br />
+      <a id="forgot_password"> ¿OLVIDASTE TU CONTRASEÑA? </a>
+      <br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="CONTRASEÑA"
+        [(ngModel)]="password"
+      />
+      <br />
+      <a id="log_in_button" (click)="callLogin()">LOG IN</a>
+    </form>
+    <a id="sing_up"> NO ESTOY REGISTRADO </a>
+  </div>
+</section>

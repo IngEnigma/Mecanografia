@@ -1,1 +1,32 @@
-<p>sing-up works!</p>
+<section class="body">
+  <section class="hero">
+    <div class="head">
+      <h1 id="titulo">JUST TIPE IT</h1>
+      <a href="#" id="salir">X</a>
+    </div>
+    <div class="log_in">
+      <form action="#">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="USUARIO"
+        />
+        <br/>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="CONTRASEÑA"
+        />
+        <br/>
+        <div id ="box">
+          <input type="checkbox" id="miCheckbox" name="miCheckbox" />
+          <label id="terminos">ACEPTO LOS TERMINOS Y CONDICIONES</label>
+        </div>
+        <br/>
+        <a id="log_in_button" (click)="redirectToHome()">CONTINUAR</a>
+      </form>
+    </div>
+  </section>
+</section>

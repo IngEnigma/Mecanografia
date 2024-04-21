@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sing-up',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './sing-up.component.css'
 })
 export class SingUpComponent {
+  constructor(private router: Router) { } 
 
+  redirectToHome() {
+    this.router.navigate(['/home']); 
+  }
 }
